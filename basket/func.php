@@ -6,7 +6,7 @@ echo'<table id="file-table"><tr><th>Имя'.$nav;
     $name="sortr";
     else $name="sort";
     echo $name; 
-    echo '>sort</a></th>"';
+    echo '>sort</a></th>';
     echo'<th>Тип</th><th>Размер'.$nav; if($_REQUEST["do"]=="sorts")$name="sortsr";else $name="sorts"; echo $name;echo '>size</a></th>';
     echo '<th>Дата'.$nav; if($_REQUEST["do"]=="sortd")$name="sortdr";else $name="sortd"; echo $name;echo '>date</a></th></tr>';
      for($i=1;$i<count($files);$i++)

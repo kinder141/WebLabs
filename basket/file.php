@@ -5,6 +5,12 @@ include('header.php');
     <?php
             include('aside.php');
             include('func.php');
+            $url=$_SERVER['REQUEST_URI'];
+            //echo $url;
+//            if(!preg_match('/^./([^.])(\?.*?)?(#.*)?$/',$dir))
+//            {
+//                $start_dir = './';
+//            }
             $start_dir = './';//$_SERVER['DOCUMENT_ROOT'];
             $row = array ($files,$size,type,$date);
             $rows = array ($row);
@@ -20,6 +26,13 @@ include('header.php');
 
 
             }
+            //if(preg_match('/\\\.|\/\.|\/\/|\\+/',$dir))
+    //echo $dir;
+            if(!preg_match('/^\.\/([a-zA-Z]*\/)+$/',$dir))
+            {
+                $dir=$start_dir;
+            }
+        echo $dir;
             if(is_dir($dir))
             {
                $files = scandir($dir);
