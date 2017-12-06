@@ -1,0 +1,25 @@
+$_GET["tochka"] = '.';
+
+    //если не точки, то определяем её, что бы видеть, где мы находимся
+                if(!isset($_GET["dir"])){
+                    $_GET["dir"] = $_GET["tochka"];
+                }
+                //$files = $_FILES['files'];
+                //открываем каталог
+                $od = opendir($_GET["dir"]);
+            //читаем каталог
+                while($file = readdir($od)){
+            //проверяем если каталог и пропускаем точку и две точки
+                if(is_dir($_GET["dir"]."/".$file) && $file!="." && $file!=".."){
+                    //создаем массив
+                    $dirs[]=$file;
+                }
+                //проверяем если ли файл
+                if(is_file($_GET["dir"]."/".$file)){
+                    //создаем массив
+                    $files[]=$file;
+                }
+            }
+                var_dump($files);
+    //закрываем каталог
+    closedir($od);
