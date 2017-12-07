@@ -292,10 +292,11 @@ font:9px/12px Arial;
 	color:#424242;
 	font:9px/12px Arial;
 }
+/*
 #file-table{
     border:1px solid black;
     width: 50%;  
-    float: left;
+    margin: 0 auto;
     text-align: center;
 }
 #file-table th{
@@ -304,4 +305,36 @@ font:9px/12px Arial;
 }
 #file-table td{
     border:1px solid black;
+}*/
+.tableR {
+  border-spacing: 0;
+  border: 1px solid;
+  border-radius: 10px;
+border-collapse: separate;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.tableR td, .tableR th {
+  padding: 4px;
+    text-align: center;
+  border-left: 1px solid;
+  border-top: 1px solid;
+    background: RGBA(54,147,212,0.5);
+}
+.tableR th {
+  background: #3693d4;
+  border-top: none;
+}
+.tableR td:first-child, .tableR th:first-child {
+  border-left: none;
+}
+
+/* из-за background */
+
+.tableR th:first-child {
+  border-top-left-radius: 10px;
+}
+.tableR th:last-child {
+  border-top-right-radius: 10px;
 }

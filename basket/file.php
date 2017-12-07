@@ -3,15 +3,10 @@ include('header.php');
 ?>
 <div class="content clearfix">
     <?php
-            include('aside.php');
+            //include('aside.php');
             include('func.php');
             $url=$_SERVER['REQUEST_URI'];
-            //echo $url;
-//            if(!preg_match('/^./([^.])(\?.*?)?(#.*)?$/',$dir))
-//            {
-//                $start_dir = './';
-//            }
-            $start_dir = './';//$_SERVER['DOCUMENT_ROOT'];
+            $start_dir = './';
             $row = array ($files,$size,type,$date);
             $rows = array ($row);
             if (!isset($_REQUEST['DIR']))
@@ -26,13 +21,11 @@ include('header.php');
 
 
             }
-            //if(preg_match('/\\\.|\/\.|\/\/|\\+/',$dir))
-    //echo $dir;
-            if(!preg_match('/^\.\/([a-zA-Z]*\/)+$/',$dir))
+          if(!preg_match('/^\.\/([a-zA-Z0-9-._]*\/)+$/',$dir))
             {
                 $dir=$start_dir;
             }
-        echo $dir;
+        
             if(is_dir($dir))
             {
                $files = scandir($dir);
@@ -45,8 +38,6 @@ include('header.php');
             $rows[$i][2]=filesize($dir.$files[$i]);
             $rows[$i][3]=date("d m Y", filectime($dir.$files[$i]));
             }
-            
-
             switch($_REQUEST['do'])
             {
                 case'sort':sorts($rows,0);break;
@@ -62,6 +53,6 @@ include('header.php');
 
 
            
-            include('right_aside.php');
+           // include('right_aside.php');
             include('footer.php');
         ?>

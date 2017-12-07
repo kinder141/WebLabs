@@ -1,14 +1,14 @@
 <?php
 function print_table($rows,$files,$dir){
 $nav=add_get();
-echo'<table id="file-table"><tr><th>Имя'.$nav;
+echo'<table class="tableR"><thead><tr><th>Имя'.$nav;
     if($_REQUEST["do"]=="sort") 
     $name="sortr";
     else $name="sort";
     echo $name; 
     echo '>sort</a></th>';
     echo'<th>Тип</th><th>Размер'.$nav; if($_REQUEST["do"]=="sorts")$name="sortsr";else $name="sorts"; echo $name;echo '>size</a></th>';
-    echo '<th>Дата'.$nav; if($_REQUEST["do"]=="sortd")$name="sortdr";else $name="sortd"; echo $name;echo '>date</a></th></tr>';
+    echo '<th>Дата'.$nav; if($_REQUEST["do"]=="sortd")$name="sortdr";else $name="sortd"; echo $name;echo '>date</a></th></tr></thead>';
      for($i=1;$i<count($files);$i++)
         {
             if($rows[$i][1]=='dir')
@@ -27,8 +27,8 @@ echo'<table id="file-table"><tr><th>Имя'.$nav;
         echo'<tr><td><a href=?DIR=';
         echo $nextdir.'>'. $rows[$i][0];
         echo '</a></td>';
-        echo'<td style="background:RGBA(255,0,0,0.5);">'.$rows[$i][1].'</td>';
-        echo'<td>'.$rows[$i][2].'</td>';
+        echo'<td style="background:RGBA(255,0,0,0.5);">'.directory.'</td>';
+        echo'<td>-</td>';
         echo'<td>'.$rows[$i][3].'</td>';
         echo '</tr>';
             }
@@ -39,7 +39,7 @@ echo'<table id="file-table"><tr><th>Имя'.$nav;
             {
         echo'<tr><td>'.$rows[$i][0].'</td>';
         echo'<td>'.$rows[$i][1].'</td>';
-        echo'<td>'.$rows[$i][2].'</td>';
+        echo'<td>';if($rows[$i][2]>1024){echo round(($rows[$i][2]/1024),2).' КБ';}else echo $rows[$i][2].' Б'; echo'</td>';
         echo'<td>'.$rows[$i][3].'</td>';
         echo '</tr>';
             }
