@@ -1,4 +1,5 @@
-<!DOCTYPE HTML5>
+<?php header("Content-Type: text/html; charset=utf-8");?>
+<!DOCTYPE HTML>
 <html lang="ru">
 <head>
     <meta charset="utf-8">

@@ -1,4 +1,4 @@
-
+﻿
 <div class="sponsors" >
 				<p>Sponsors</p>
 					<ul>

@@ -1,4 +1,4 @@
-
+﻿
 <div class="rating">
 				<p>Rating</p>
 					<ul class="teams">

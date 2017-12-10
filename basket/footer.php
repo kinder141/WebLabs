@@ -1,4 +1,4 @@
-</div>
+﻿</div>
 		<div class="footer clearfix">
 			<div class="rules">
 				<span>:: Copyright 2002  -  All Rights Reserved © Lithuanian-American Basketball Association::</span>

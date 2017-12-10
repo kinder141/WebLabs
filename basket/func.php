@@ -1,6 +1,7 @@
-<?php
+﻿<?php
 function print_table($rows,$files,$dir){
 $nav=add_get();
+
 echo'<table class="tableR"><thead><tr><th>Имя'.$nav;
     if($_REQUEST["do"]=="sort") 
     $name="sortr";
@@ -25,9 +26,9 @@ echo'<table class="tableR"><thead><tr><th>Имя'.$nav;
                 else
                 $nextdir = $dir.$rows[$i][0].'/';
         echo'<tr><td><a href=?DIR=';
-        echo $nextdir.'>'. $rows[$i][0];
+        echo  $nextdir.'>'.$rows[$i][0];
         echo '</a></td>';
-        echo'<td style="background:RGBA(255,0,0,0.5);">'.directory.'</td>';
+        echo'<td style="background:RGBA(255,0,0,0.5);">directory</td>';
         echo'<td>-</td>';
         echo'<td>'.$rows[$i][3].'</td>';
         echo '</tr>';

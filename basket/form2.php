@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
   echo '<br><textarea readonly style="width: 400px; height:75px; display:block; margin:0 auto;">$_POST: ';
   foreach($_POST as $key=>$value)
   {
