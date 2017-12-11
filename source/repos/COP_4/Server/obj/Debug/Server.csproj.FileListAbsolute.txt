@@ -1,0 +1,6 @@
+C:\Users\VLAD\source\repos\COP_4\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\VLAD\source\repos\COP_4\Server\bin\Debug\Server.dll.config
+C:\Users\VLAD\source\repos\COP_4\Server\bin\Debug\Server.dll
+C:\Users\VLAD\source\repos\COP_4\Server\bin\Debug\Server.pdb
+C:\Users\VLAD\source\repos\COP_4\Server\obj\Debug\Server.dll
+C:\Users\VLAD\source\repos\COP_4\Server\obj\Debug\Server.pdb

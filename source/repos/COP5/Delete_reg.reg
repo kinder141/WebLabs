@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\CLSID\{AA877308-C103-461C-A38F-DF79A565CBA1}]
+@="Reg_5"
+
+[-HKEY_CLASSES_ROOT\CLSID\{AA877308-C103-461C-A38F-DF79A565CBA1}\InprocServer32]
+@="C:\\Users\\VLAD\\source\\repos\\Cop2v\\Debug\\SimpleDll.dll"
+
+[-HKEY_CLASSES_ROOT\CLSID\{AA877308-C103-461C-A38F-DF79A565CBA1}\ProgID]
+@="Strings.Treatment.0.1"
+
+[-HKEY_CLASSES_ROOT\CLSID\{AA877308-C103-461C-A38F-DF79A565CBA1}\VersionIndependentProgID]
+@="Strings.Treatment"
+
+[-HKEY_CLASSES_ROOT\Strings.Treatment]
+@="Some treatmet with strings"
+
+[-HKEY_CLASSES_ROOT\Strings.Treatment\CurVer]
+@="Strings.Treatment.0.1"
+
+[-HKEY_CLASSES_ROOT\Strings.Treatment\CLSID]
+@="{AA877308-C103-461C-A38F-DF79A565CBA1}"
+
+[-HKEY_CLASSES_ROOT\Strings.Treatment.0.1]
+@="Some treatment with strings"
+
+[-HKEY_CLASSES_ROOT\Strings.Treatment.0.1\CLSID]
+@="{AA877308-C103-461C-A38F-DF79A565CBA1}"

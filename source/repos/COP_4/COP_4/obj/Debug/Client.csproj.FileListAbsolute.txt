@@ -1,0 +1,10 @@
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\COP_4.exe.config
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\COP_4.exe
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\COP_4.pdb
+C:\Users\VLAD\source\repos\COP_4\COP_4\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\VLAD\source\repos\COP_4\COP_4\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\VLAD\source\repos\COP_4\COP_4\obj\Debug\COP_4.exe
+C:\Users\VLAD\source\repos\COP_4\COP_4\obj\Debug\COP_4.pdb
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\Server.dll
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\Server.pdb
+C:\Users\VLAD\source\repos\COP_4\COP_4\bin\Debug\Server.dll.config
